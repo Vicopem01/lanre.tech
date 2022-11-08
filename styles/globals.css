@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply underline;
+  }
+
+  .m-horizontal {
+    @apply mx-auto w-[90%] max-w-[1240px];
+  }
+
+  .body {
+    @apply text-lg text-white md:text-xl;
+  }
+  .h-screen-trick {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    @apply min-h-[640px] !important;
+  }
+  .shadow {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .lined {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
