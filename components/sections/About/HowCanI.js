@@ -14,7 +14,7 @@ const HowCanI = () => {
     },
   ];
   return (
-    <div className="mt-s23">
+    <div className="mt-s23" data-aos="fade-up">
       <div className="mb-s4">
         <Image src={HowCanIAssistYou} alt="Experience" width={270} />
       </div>

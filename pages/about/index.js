@@ -1,3 +1,4 @@
+import AddMe from "../../components/sections/About/AddMe";
 import Experience from "../../components/sections/About/Experience";
 import HelloWorld from "../../components/sections/About/HelloWorld";
 import HowCanI from "../../components/sections/About/HowCanI";
@@ -10,6 +11,7 @@ const About = () => {
       <HelloWorld />
       <Experience />
       <HowCanI />
+      <AddMe />
     </>
   );
 };

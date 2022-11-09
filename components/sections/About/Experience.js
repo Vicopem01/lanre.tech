@@ -46,7 +46,7 @@ const Experience = () => {
     },
   ];
   return (
-    <div className="mt-s23">
+    <div className="mt-s23" data-aos="fade-up">
       <div className="flex items-center justify-between mb-s4">
         <Image src={ExperienceText} alt="Experience" width={270} />
         <a className="text-green border-b-4 border-green">Download CV</a>

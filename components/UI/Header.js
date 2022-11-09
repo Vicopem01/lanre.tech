@@ -47,7 +47,7 @@ const SOCIALS = [
 ];
 const Header = () => {
   return (
-    <header className="text-white flex justify-between">
+    <header className="text-white flex justify-between pt-s6">
       <NavLinks />
       <Name />
       <Menu />
@@ -56,7 +56,7 @@ const Header = () => {
 };
 
 const Name = () => (
-  <h2>
+  <h2 className="text-4xl">
     <Link href="/">AJAO AFEEZ 0.</Link>
   </h2>
 );
@@ -64,12 +64,13 @@ const Name = () => (
 const NavLinks = () => (
   <div>
     {LINKS.map((link, index) => (
-      <Link key={`navlink-${index}`} href={link.route}>
+      <Link key={`navlink-${index}`} href={link.route} className="mx-s2">
         {link.text}
       </Link>
     ))}
   </div>
 );
+
 const Menu = () => {
   const [sidebar, showSidebar] = useState(false);
   return (
@@ -83,7 +84,7 @@ const Menu = () => {
           <div>
             <div className="w-screen h-screen fixed top-0 left-0 z-10">
               <button
-                className="fixed right-0 top-0"
+                className="fixed right-0 top-10 right-20"
                 onClick={() => showSidebar(false)}
               >
                 <Image src={Cancel} alt="" width={20} height={20} />

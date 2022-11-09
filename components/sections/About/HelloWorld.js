@@ -5,7 +5,7 @@ import Button from "../../UI/Button";
 
 const HelloWorld = () => {
   return (
-    <div className="text-white mt-s20">
+    <div className="text-white mt-s20" data-aos="fade-up">
       <div className="flex">
         <div className="w-2/5 ">
           <Image
