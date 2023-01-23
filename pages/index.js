@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/UI/Header";
 import Banner from "../public/img/colored-texts/banner.webp";
