@@ -11,6 +11,11 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="description"
+            content="Product Designer . UI UX. II Cryptocurrency II Blockchain II Fintech II Webflow"
+          />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body className="transition-300 relative min-h-screen m-horizontal overflow-hidden overflow-x-hidden bg-purple p-0 font-firaSans">
           <Main />
