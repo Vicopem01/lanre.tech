@@ -102,13 +102,13 @@ const Menu = () => {
               <Link className="pl-s8 my-s3" href="/shots" data-aos="fade-right">
                 Shots
               </Link>
-              <a
+              {/* <a
                 className="pr-s8 inline opacity-100"
                 href="/projects"
                 data-aos="fade-left"
               >
                 Contact Me
-              </a>
+              </a> */}
             </div>
             <div className="flex justify-center fixed bottom-10 left-1/2 -translate-x-1/2">
               {SOCIALS.map((social, index) => (
