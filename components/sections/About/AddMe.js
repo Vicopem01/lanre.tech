@@ -36,7 +36,11 @@ const AddMe = () => {
             I am available for full-time, part-time and contract roles.
           </p>
           <p className="text-4xl mt-s3">Open to relocation.</p>
-          <Button text="Send Message" classes="block ml-auto" />
+          <Button
+            text="Send Message"
+            classes="block ml-auto w-[170px]"
+            href="mailto:ajaoafeez93@gmail.com?subject=Hello%20Afeez&body=From%20your%20portfolio,%20"
+          />
           <hr className="border-[rgba(255,255,255,0.3)] my-s4" />
           <div className="flex justify-start">
             {SOCIALS.map((social, index) => (
