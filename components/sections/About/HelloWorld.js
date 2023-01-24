@@ -16,7 +16,7 @@ const HelloWorld = () => {
             className="block m-auto"
           />
         </div>
-        <div className="text-xl w-3/5 font-normal">
+        <div className="text-xl w-3/5 font-normal leading-9 font-light text-xl">
           <Image src={HelloWorldText} alt="Hello World" width={280} />
           <p className="mt-s7">
             I&#39;m a passionate product designer with over Four years
@@ -40,7 +40,10 @@ const HelloWorld = () => {
             I am currently AVAILABLE to work on new (and exciting) ideas, so if
             you have one, please let me know
           </p>
-          <Button text="Say Hello" />
+          <Button
+            text="Say Hello"
+            href="mailto:ajaoafeez93@gmail.com?subject=Hello%20Afeez&body=From%20your%20portfolio,%20"
+          />
         </div>
       </div>
     </div>

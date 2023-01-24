@@ -10,7 +10,7 @@ import dribbble from "../../../public/img/icons/dribbble.svg";
 const AddMe = () => {
   const SOCIALS = [
     {
-      route: "/instagram",
+      route: "https://www.instagram.com/sir_righteous_man/",
       img: instagram,
     },
     {
@@ -18,7 +18,7 @@ const AddMe = () => {
       img: linkedin,
     },
     {
-      route: "/twitter",
+      route: "https://twitter.com/Righteous_man13/",
       img: twitter,
     },
     {
@@ -38,10 +38,13 @@ const AddMe = () => {
           <p className="text-4xl mt-s3">Open to relocation.</p>
           <Button text="Send Message" classes="block ml-auto" />
           <hr className="border-[rgba(255,255,255,0.3)] my-s4" />
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             {SOCIALS.map((social, index) => (
               <a
                 key={`social-${index}`}
+                href={social.route}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mx-s3 flex place-content-center w-[46px] h-[46px] bg-gray-2 rounded-full"
               >
                 <Image src={social.img} alt="" width={20} height={20} />
