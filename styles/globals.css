@@ -30,4 +30,19 @@
     font-size: 16px;
     line-height: 30px;
   }
+  .project-1 {
+    background-color: #eab221;
+  }
+  .project-2 {
+    background-color: #417cff;
+  }
+  .project-3 {
+    background-color: #d84f00;
+  }
+  .project-4 {
+    background-color: #001e2f;
+  }
+  .project-5 {
+    background-color: #006156;
+  }
 }

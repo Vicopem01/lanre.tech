@@ -10,8 +10,8 @@ import QuantumBanner from "../../../public/img/brand/quantum-banner.webp";
 import QuantumLogo from "../../../public/img/brand/quantum.webp";
 import GTBanner from "../../../public/img/brand/gt-banner.webp";
 import GTLogo from "../../../public/img/brand/gt.webp";
-import RiciaLogo from "../../../public/img/brand/ricia.webp";
-import RiciaBanner from "../../../public/img/brand/ricia-banner.webp";
+import CapitalExchangeBanner from "../../../public/img/brand/capital-exchange-banner.webp";
+import CapitalExchangeLogo from "../../../public/img/brand/capital-exchange.webp";
 
 const PROJECTS = [
   {
@@ -29,13 +29,6 @@ const PROJECTS = [
     hover: "#417CFF",
   },
   {
-    image: QuantumLogo,
-    company: "Quantum Travel",
-    desc: "Quantum is travel application where you can displace destination management in which you can reserve special location , transportion and also flight with the aid of the mobile application.",
-    banner: QuantumBanner,
-    hover: "#006156",
-  },
-  {
     image: GTLogo,
     company: "GTB Bank (Redesign Project)",
     desc: "Guaranty Trust Bank Plc a.k.a GT Bank is an international financial institution that provides individuals, businesses, institutions both in the private and public sectors across Africa and the United Kingdom with a wide range of modern and flexible financial products and services.",
@@ -43,11 +36,18 @@ const PROJECTS = [
     hover: "#D84F00",
   },
   {
-    image: RiciaLogo,
+    image: CapitalExchangeLogo,
     company: "CAPITAL EXCHANGE",
     desc: "Capital exchange is a Financial institution whose business areas include, Investments, Loans, Exchange and Savings. This project is about designing a web application user interface for capital exchange",
-    banner: RiciaBanner,
+    banner: CapitalExchangeBanner,
     hover: "#001E2F",
+  },
+  {
+    image: QuantumLogo,
+    company: "Quantum Travel",
+    desc: "Quantum is travel application where you can displace destination management in which you can reserve special location , transportion and also flight with the aid of the mobile application.",
+    banner: QuantumBanner,
+    hover: "#006156",
   },
 ];
 
@@ -58,21 +58,21 @@ const SelectedProjects = () => {
         <Image src={SelectedProjectsText} alt="" width={400} />
       </div>
       <Shadow classes="relative text-white">
-        <div className="flex justify-between">
-          <div className="px-s3 md:px-s6 pt-s3 md:pt-s6 group w-1/2">
+        <div className="flex justify-between md:flex-row flex-col">
+          <div className="px-s3 md:px-s6 pt-s3 md:pt-s6 group w-full md:w-1/2">
             <div
-              className={`transition-all ease-in duration-300 absolute w-full h-full bg-[#EAB221] -z-10 rounded-[20px] opacity-0 transition-300 group-hover:opacity-20 top-0 left-0`}
+              className={`transition-all ease-in duration-300 absolute w-full h-full -z-10 rounded-[20px] opacity-0 transition-300 group-hover:opacity-20 top-0 left-0`}
             ></div>
             <Image
               src={PROJECTS[0].image}
-              alt="Godan Logistics"
+              alt={PROJECTS[0].company}
               width={75}
               height={75}
             />
-            <h2 className="text-5xl font-bold mt-s8 mb-s4">
+            <h2 className="text-5xl font-bold mt-s8 mb-s2">
               {PROJECTS[0].company}
             </h2>
-            <p>{PROJECTS[0].desc}</p>
+            <p className="leading-8">{PROJECTS[0].desc}</p>
             <Button classes="my-s4" text="Read Case Study" />
           </div>
           <Image
@@ -80,34 +80,36 @@ const SelectedProjects = () => {
             alt=""
             // width={500}
             // height={480}
-            className="self-end w-2/5"
+            className="self-end w-full md:w-2/5"
           />
         </div>
       </Shadow>
-      <div
-        className="grid grid-cols-2 gap-5 text-white mt-s15"
-        data-aos="zoom-in-up"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-white mt-s15">
         {PROJECTS.slice(1).map((project, index) => (
-          <Shadow classes="relative" key={`project-${index}`}>
-            <div className="px-s3 md:px-s6 pt-s3 md:pt-s6 group">
-              <div
-                className={`transition-all ease-in duration-300 absolute w-full h-full bg-[${project.hover}] -z-10 rounded-[20px] opacity-0 transition-300 group-hover:opacity-20 top-0 left-0`}
-              ></div>
-              <Image
-                src={project.image}
-                alt="Godan Logistics"
-                width={75}
-                height={75}
-              />
-              <h2 className="text-5xl font-bold mt-s8 mb-s4">
-                {project.company}
-              </h2>
-              <p>{project.desc}</p>
-              <Button classes="my-s4" text="Read Case Study" />
-              <Image src={project.banner} alt="" />
-            </div>
-          </Shadow>
+          <div data-aos="fade-in-up">
+            <Shadow classes="h-full relative" key={`project-${index}`}>
+              <div className="px-s3 md:px-s8 pt-s3 md:pt-s7 group flex flex-col justify-between h-full">
+                <div>
+                  <div
+                    style={{ backgroundColor: project.hover }}
+                    className={`transition-all ease-in duration-300 absolute w-full h-full -z-10 rounded-[20px] opacity-0 transition-300 group-hover:opacity-20 top-0 left-0`}
+                  ></div>
+                  <Image
+                    src={project.image}
+                    alt={project.company}
+                    width={75}
+                    height={75}
+                  />
+                  <h2 className="text-5xl font-bold mt-s8 mb-s4">
+                    {project.company}
+                  </h2>
+                  <p className="leading-8">{project.desc}</p>
+                  <Button classes="my-s8 w-[180px]" text="Read Case Study" />
+                </div>
+                <Image src={project.banner} alt="" />
+              </div>
+            </Shadow>
+          </div>
         ))}
       </div>
     </div>

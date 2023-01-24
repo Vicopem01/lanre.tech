@@ -49,7 +49,7 @@ const Header = () => {
   return (
     <header className="text-white flex justify-between pt-s6 items-center">
       <Name />
-      {/* <Menu /> */}
+      <Menu />
       <NavLinks />
     </header>
   );
@@ -62,7 +62,7 @@ const Name = () => (
 );
 
 const NavLinks = () => (
-  <div>
+  <div className="hidden md:block">
     {LINKS.map((link, index) => (
       <Link
         key={`navlink-${index}`}
@@ -78,7 +78,7 @@ const NavLinks = () => (
 const Menu = () => {
   const [sidebar, showSidebar] = useState(false);
   return (
-    <div>
+    <div className="md:hidden block">
       <button onClick={() => showSidebar(true)} className="p-s1">
         <Image src={MenuBurger} alt="" width={20} height={20} />
       </button>
@@ -102,13 +102,13 @@ const Menu = () => {
               <Link className="pl-s8 my-s3" href="/shots" data-aos="fade-right">
                 Shots
               </Link>
-              {/* <a
+              <a
                 className="pr-s8 inline opacity-100"
-                href="/projects"
+                href="mailto:ajaoafeez93@gmail.com?subject=Hello%20Afeez&body=From%20your%20portfolio,%20"
                 data-aos="fade-left"
               >
                 Contact Me
-              </a> */}
+              </a>
             </div>
             <div className="flex justify-center fixed bottom-10 left-1/2 -translate-x-1/2">
               {SOCIALS.map((social, index) => (

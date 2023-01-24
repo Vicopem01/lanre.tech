@@ -14,7 +14,7 @@ const AddMe = () => {
       img: instagram,
     },
     {
-      route: "/linkedin",
+      route: "https://www.linkedin.com/in/ajaoafeez/",
       img: linkedin,
     },
     {
