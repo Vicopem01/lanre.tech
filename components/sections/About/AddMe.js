@@ -2,31 +2,9 @@ import Shadow from "../../UI/Shadow";
 import AddMeText from "../../../public/img/colored-texts/add-me.webp";
 import Image from "next/image";
 import Button from "../../UI/Button";
-import instagram from "../../../public/img/icons/instagram.svg";
-import linkedin from "../../../public/img/icons/linkedin.svg";
-import twitter from "../../../public/img/icons/twitter.svg";
-import dribbble from "../../../public/img/icons/dribbble.svg";
+import { SOCIALS } from "../../../constants";
 
 const AddMe = () => {
-  const SOCIALS = [
-    {
-      route: "https://www.instagram.com/sir_righteous_man/",
-      img: instagram,
-    },
-    {
-      route: "https://www.linkedin.com/in/ajaoafeez/",
-      img: linkedin,
-    },
-    {
-      route: "https://twitter.com/Righteous_man13/",
-      img: twitter,
-    },
-    {
-      route: "/dribbble",
-      img: dribbble,
-    },
-  ];
-
   return (
     <div className="mt-s25 mb-s10" data-aos="zoom-in-up">
       <Shadow>

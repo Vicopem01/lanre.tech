@@ -2,49 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import MenuBurger from "../../public/img/icons/menu-burger.svg";
 import Cancel from "../../public/img/icons/cancel.svg";
-import instagram from "../../public/img/icons/instagram.svg";
-import linkedin from "../../public/img/icons/linkedin.svg";
-import twitter from "../../public/img/icons/twitter.svg";
-import dribbble from "../../public/img/icons/dribbble.svg";
 import { useState } from "react";
+import { LINKS, SOCIALS } from "../../constants";
 
-const LINKS = [
-  {
-    route: "/about",
-    text: "About",
-  },
-  {
-    route: "/projects",
-    text: "Projects",
-  },
-  {
-    route: "/shots",
-    text: "Shots",
-  },
-  {
-    route: "/contact-me",
-    text: "Contact Me",
-  },
-];
-
-const SOCIALS = [
-  {
-    route: "/instagram",
-    img: instagram,
-  },
-  {
-    route: "/linkedin",
-    img: linkedin,
-  },
-  {
-    route: "/twitter",
-    img: twitter,
-  },
-  {
-    route: "/dribbble",
-    img: dribbble,
-  },
-];
 const Header = () => {
   return (
     <header className="text-white flex justify-between pt-s6 items-center">
@@ -77,6 +37,7 @@ const NavLinks = () => (
 
 const Menu = () => {
   const [sidebar, showSidebar] = useState(false);
+
   return (
     <div className="md:hidden block">
       <button onClick={() => showSidebar(true)} className="p-s1">
@@ -92,7 +53,7 @@ const Menu = () => {
             >
               <Image src={Cancel} alt="" width={20} height={20} />
             </button>
-            <div className="text-9xl flex justify-center flex-col text-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="text-9xl flex justify-center flex-col text-center fixed top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3">
               <Link className="pl-s8 mb-s3" href="/about" data-aos="fade-right">
                 About
               </Link>
@@ -102,20 +63,23 @@ const Menu = () => {
               <Link className="pl-s8 my-s3" href="/shots" data-aos="fade-right">
                 Shots
               </Link>
-              <a
-                className="pr-s8 inline opacity-100"
-                href="mailto:ajaoafeez93@gmail.com?subject=Hello%20Afeez&body=From%20your%20portfolio,%20"
-                data-aos="fade-left"
-              >
-                Contact Me
-              </a>
+              <div data-aos="fade-left">
+                <a
+                  className="pr-s8 inline opacity-100"
+                  href="mailto:ajaoafeez93@gmail.com?subject=Hello%20Afeez&body=From%20your%20portfolio,%20"
+                >
+                  Contact Me
+                </a>
+              </div>
             </div>
             <div className="flex justify-center fixed bottom-10 left-1/2 -translate-x-1/2">
               {SOCIALS.map((social, index) => (
                 <a
                   key={`social-${index}`}
-                  data-aos="fade-up"
                   className="mx-s3 flex place-content-center w-[46px] h-[46px] bg-gray-2 rounded-full"
+                  href={social.route}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <Image src={social.img} alt="" width={20} height={20} />
                 </a>
