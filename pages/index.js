@@ -5,6 +5,7 @@ import blob1 from "../public/img/blobs/blob1.png";
 import blob2 from "../public/img/blobs/blob2.png";
 import blob3 from "../public/img/blobs/blob3.png";
 import blob4 from "../public/img/blobs/blob4.png";
+import Typed from "react-typed";
 
 const Home = () => {
   return (
@@ -37,7 +38,10 @@ const Home = () => {
         />
 
         <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-4/5 w-full">
-          <Image src={Banner} alt="Ajao Afeez Olanrewaju" />
+          <span className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white block w-full h-[1px]"></span>
+          <h1 className="text-white text-center border-y uppercase big-text px-s3">
+            <Typed strings={[`Olanrewaju Ajao Workfolio`]} typeSpeed={80} />
+          </h1>
         </div>
       </main>
 

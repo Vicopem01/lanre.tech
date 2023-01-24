@@ -30,6 +30,24 @@
     font-size: 16px;
     line-height: 30px;
   }
+  .big-text {
+    font-size: 140px;
+  }
+  @media screen and (max-width: 768px) {
+    .big-text {
+      font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 1110px) {
+    .big-text {
+      font-size: 90px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .big-text {
+      font-size: 50px;
+    }
+  }
   .project-1 {
     background-color: #eab221;
   }
