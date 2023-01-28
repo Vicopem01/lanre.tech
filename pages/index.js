@@ -38,9 +38,16 @@ const Home = () => {
         />
 
         <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-4/5 w-full">
-          <span className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white block w-full h-[1px]"></span>
+          {/* <span className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white block w-full h-[1px]"></span> */}
           <h1 className="text-white text-center border-y uppercase big-text px-s3">
-            <Typed strings={[`Olanrewaju Ajao Workfolio`]} typeSpeed={80} />
+            <Typed
+              strings={[`Olanrewaju Ajao`]}
+              typeSpeed={120}
+              showCursor={false}
+            />
+          </h1>
+          <h1 className="text-white text-center border-y uppercase big-text px-s3">
+            <Typed strings={[`Workfolio`]} typeSpeed={120} showCursor={false} />
           </h1>
         </div>
       </main>

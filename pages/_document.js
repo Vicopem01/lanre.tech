@@ -17,7 +17,7 @@ class MyDocument extends Document {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body className="transition-300 relative min-h-screen m-horizontal overflow-hidden overflow-x-hidden bg-purple p-0 font-firaSans">
+        <body className="transition-300 relative min-h-screen overflow-hidden overflow-x-hidden bg-purple p-0 font-firaSans">
           <Main />
           <NextScript />
         </body>

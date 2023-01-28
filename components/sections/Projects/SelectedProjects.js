@@ -6,7 +6,7 @@ import { PROJECTS } from "../../../constants";
 
 const SelectedProjects = () => {
   return (
-    <div className="mt-s20" data-aos="fade-in-up">
+    <div className="mt-s20 m-horizontal" data-aos="fade-in-up">
       <div className="mb-s9">
         <Image src={SelectedProjectsText} alt="" width={400} />
       </div>

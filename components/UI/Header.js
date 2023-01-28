@@ -7,7 +7,7 @@ import { LINKS, SOCIALS } from "../../constants";
 
 const Header = () => {
   return (
-    <header className="text-white flex justify-between pt-s6 items-center">
+    <header className="text-white flex m-horizontal justify-between pt-s6 items-center">
       <Name />
       <Menu />
       <NavLinks />

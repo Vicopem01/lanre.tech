@@ -14,13 +14,16 @@ const HowCanI = () => {
     },
   ];
   return (
-    <div className="mt-s23" data-aos="fade-up">
+    <div className="mt-s23 m-horizontal" data-aos="fade-up">
       <div className="mb-s4">
         <Image src={HowCanIAssistYou} alt="Experience" width={270} />
       </div>
-      <div className="flex items-stretch gap-s3">
+      <div className="flex flex-col lg:flex-row items-stretch gap-s3">
         {TECHSKILLS.map((skill, index) => (
-          <Shadow classes="p-s3 w-1/2 text-white" key={`skill-${index}`}>
+          <Shadow
+            classes="p-s3 w-full lg:w-1/2 text-white"
+            key={`skill-${index}`}
+          >
             <h3 className="text-white text-5xl mb-s2">{skill.title}</h3>
             <p className="lined">{skill.text}</p>
           </Shadow>

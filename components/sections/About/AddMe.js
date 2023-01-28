@@ -6,7 +6,7 @@ import { SOCIALS } from "../../../constants";
 
 const AddMe = () => {
   return (
-    <div className="mt-s25 mb-s10" data-aos="zoom-in-up">
+    <div className="mt-s25 mb-s10 m-horizontal" data-aos="zoom-in-up">
       <Shadow>
         <div className="p-s4 text-white">
           <Image src={AddMeText} alt="Add Me To Your Team" width={400} />

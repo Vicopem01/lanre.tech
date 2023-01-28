@@ -46,14 +46,14 @@ const Experience = () => {
     },
   ];
   return (
-    <div className="mt-s23" data-aos="fade-up">
+    <div className="mt-s23 m-horizontal" data-aos="fade-up">
       <div className="flex items-center justify-between mb-s4">
         <Image src={ExperienceText} alt="Experience" width={270} />
         <a className="text-green border-b-4 border-green">Download CV</a>
       </div>
-      <div className="flex justify-center gap-s3">
+      <div className="flex justify-center flex-col lg:flex-row items-start gap-s3">
         {WORK_EXPERIENCE.map((work, index) => (
-          <Shadow key={`experience-${index}`} classes="p-s3 w-1/3">
+          <Shadow key={`experience-${index}`} classes="p-s3 w-full lg:w-1/3">
             <h3 className="text-white text-xl">{work.title}</h3>
             {work.history.map((history, index) => (
               <div key={`history-${index}`}>
@@ -70,9 +70,9 @@ const Experience = () => {
             ))}
           </Shadow>
         ))}
-        <Shadow classes="p-s3 w-1/3">
+        <Shadow classes="p-s3 w-full lg:w-1/3">
           <h3 className="text-white text-xl">FUTURE</h3>
-          <a className="text-green border-b-4 border-green text-xl mt-s2 inline-block">
+          <a className="mb-5 text-green border-b-4 border-green text-xl mt-s2 inline-block">
             YOU DECIDE
           </a>
         </Shadow>

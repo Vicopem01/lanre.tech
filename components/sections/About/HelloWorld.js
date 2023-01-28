@@ -2,12 +2,16 @@ import Image from "next/image";
 import HelloWorldText from "../../../public/img/colored-texts/hello-world.webp";
 import Avatar from "../../../public/img/avatar/avatar.webp";
 import Button from "../../UI/Button";
+import Blur from "../../../public/img/blobs/blur.png";
 
 const HelloWorld = () => {
   return (
-    <div className="text-white mt-s20" data-aos="fade-up">
-      <div className="flex">
-        <div className="w-2/5 ">
+    <div className="relative text-white mt-s20 m-horizontal" data-aos="fade-up">
+      <div className="flex relative">
+        <div className={`hidden lg:block w-2/5 relative`}>
+          <div className="absolute top-1/2 left-1/2 w-screen h-screen -z-10 -translate-x-1/2 -translate-y-2/3">
+            <Image src={Blur} alt="" fill className="blur-3xl" />
+          </div>
           <Image
             src={Avatar}
             alt="Avatar"
@@ -16,7 +20,7 @@ const HelloWorld = () => {
             className="block m-auto"
           />
         </div>
-        <div className="text-xl w-3/5 font-normal leading-9 font-light text-xl">
+        <div className="text-xl w-full lg:w-3/5 font-normal leading-9 font-light text-xl">
           <Image src={HelloWorldText} alt="Hello World" width={280} />
           <p className="mt-s7">
             I&#39;m a passionate product designer with over Four years

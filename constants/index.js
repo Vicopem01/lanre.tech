@@ -55,7 +55,7 @@ export const PROJECTS = [
   {
     image: SpaceetLogo,
     company: "Spaceet Luxury Apartment",
-    desc: "Spaceet is a Nigerian based company that operates an online marketing for lodging, primarily homestays for vacation rentals, and tourism activities. Based in Lagos ,Nigeria the platform is accessible via website and mobile app. Spaceet also owns an apartment on the websites and people who owns house are also permitted to host their home on the websites after some documentation ,it profits by receiving commission from each booking.",
+    desc: "Spaceet is a Nigerian based company that operates an online marketing for lodging, primarily homestays for vacation rentals, and tourism activities. Based in Lagos ,Nigeria the platform is accessible via website and mobile app.",
     banner: SpaceetBanner,
     prototype:
       "https://www.figma.com/proto/avQ0WdEvv8GWFt1ED6o0ci/New-Portfolio?page-id=0%3A1&node-id=1328%3A4775&scaling=min-zoom&starting-point-node-id=1%3A160&show-proto-sidebar=1",
@@ -64,7 +64,7 @@ export const PROJECTS = [
   {
     image: GodanLogo,
     company: "Godan Logistics",
-    desc: "Godan is a Nigerian based logistics company which provide shipping off items from one destination to another , They are very fast and affordable and they also are secure . Godan is a delivery service in Nigeria through its network office in Sagamu , Ogun-State .It also provide the shipping of heavy duty machines from destination to another and it ranked among one of the most reliable shipping companies.",
+    desc: "Godan is a Nigerian based logistics company which provide shipping off items from one destination to another , They are very fast and affordable and they also are secure.",
     banner: GodanBanner,
     prototype:
       "https://www.figma.com/proto/avQ0WdEvv8GWFt1ED6o0ci/New-Portfolio?page-id=0%3A1&node-id=1311%3A5661&scaling=min-zoom&starting-point-node-id=1%3A160&show-proto-sidebar=1",
