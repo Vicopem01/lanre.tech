@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Header from "../components/UI/Header";
-import Banner from "../public/img/colored-texts/banner.webp";
 import blob1 from "../public/img/blobs/blob1.png";
 import blob2 from "../public/img/blobs/blob2.png";
 import blob3 from "../public/img/blobs/blob3.png";
