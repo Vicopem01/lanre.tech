@@ -9,7 +9,7 @@ const HelloWorld = () => {
     <div className="relative text-white mt-s20 m-horizontal" data-aos="fade-up">
       <div className="flex relative">
         <div className={`hidden lg:block w-2/5 relative`}>
-          <div className="absolute top-1/2 left-1/2 w-screen h-screen -z-10 -translate-x-1/2 -translate-y-2/3">
+          <div className="absolute top-1/2 left-1/2 w-screen h-[80vh] -z-10 -translate-x-1/2 -translate-y-2/3">
             <Image src={Blur} alt="" fill className="blur-3xl" />
           </div>
           <Image
@@ -45,6 +45,7 @@ const HelloWorld = () => {
             you have one, please let me know
           </p>
           <Button
+            classes="block w-[150px]"
             text="Say Hello"
             href="mailto:ajaoafeez93@gmail.com?subject=Hello%20Afeez&body=From%20your%20portfolio,%20"
           />

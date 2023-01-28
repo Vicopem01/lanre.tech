@@ -9,21 +9,21 @@ const Experience = () => {
       history: [
         {
           company: "Grazac Academy",
-          position: "Product designer ( Internship)",
+          position: "Product designer (Internship)",
           location: "Lagos",
-          duration: "Nigeria Feb 2017 - May 2017",
+          duration: "Nigeria Feb 2021 - Oct 2021",
         },
         {
-          company: "Godanlogistics",
+          company: "Godan Logistics",
           position: "Product designer (Contract)",
           location: "Lagos",
-          duration: "Nigeria Feb 2017 - May 2017",
+          duration: "Nigeria Aug 2020 - Jan 2021",
         },
         {
-          company: "Spaceet ( Team Lead )",
+          company: "Spaceet Africa",
           position: "Product designer ( Full Time)",
           location: "Lagos",
-          duration: "Nigeria Feb 2017 - May 2017",
+          duration: "Nigeria Oct 2021 - March 2022",
         },
       ],
     },
@@ -31,16 +31,16 @@ const Experience = () => {
       title: "PRESENT",
       history: [
         {
-          company: "Grazac Academy",
+          company: "Spaceet ( Team Lead )",
           position: "Product designer ( Internship)",
           location: "Lagos",
-          duration: "Nigeria Feb 2017 - May 2017",
+          duration: "Nigeria March 2022 - Nov 2022",
         },
         {
           company: "WEDANCE",
           position: "Product designer (Contract)",
-          location: "Munich Germany",
-          duration: "Nigeria Feb 2017 - May 2017",
+          location: "Munich",
+          duration: "GERMANY May 2017 - Present",
         },
       ],
     },

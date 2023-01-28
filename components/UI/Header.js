@@ -17,7 +17,9 @@ const Header = () => {
 
 const Name = () => (
   <h2 className="text-4xl">
-    <Link href="/">AJAO AFEEZ 0.</Link>
+    <Link href="/" className="hover:underline">
+      AJAO AFEEZ 0.
+    </Link>
   </h2>
 );
 

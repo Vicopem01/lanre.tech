@@ -14,7 +14,7 @@ const SelectedProjects = () => {
         <div className="flex justify-between md:flex-row flex-col">
           <div className="px-s3 md:px-s6 pt-s3 md:pt-s6 group w-full md:w-1/2">
             <div
-              className={`transition-all ease-in duration-300 absolute w-full h-full -z-10 rounded-[20px] opacity-0 transition-300 group-hover:opacity-20 top-0 left-0`}
+              className={`transition-all ease-in duration-300 absolute w-full h-full bg-[#EAB221] -z-10 rounded-[20px] opacity-0 transition-300 group-hover:opacity-20 top-0 left-0`}
             ></div>
             <Image
               src={PROJECTS[0].image}
