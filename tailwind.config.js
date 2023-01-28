@@ -73,28 +73,28 @@ module.exports = {
         s24: "192px",
         s25: "200px",
       },
-      keyframes: {
-        bounce: {
-          "0%": {
-            transform: " translateY(0px)",
-          },
-          "25%": {
-            transform: " translateY(-5px)",
-          },
-          "50%": {
-            transform: " translateY(0px)",
-          },
-          "75%": {
-            transform: " translateY(5px)",
-          },
-          "100%": {
-            transform: " translateY(0px)",
-          },
-        },
-      },
-      animation: {
-        bounce: "bounce 1s ease-in-out infinite",
-      },
+      // keyframes: {
+      //   bounce: {
+      //     "0%": {
+      //       transform: " translateY(0px)",
+      //     },
+      //     "25%": {
+      //       transform: " translateY(-5px)",
+      //     },
+      //     "50%": {
+      //       transform: " translateY(0px)",
+      //     },
+      //     "75%": {
+      //       transform: " translateY(5px)",
+      //     },
+      //     "100%": {
+      //       transform: " translateY(0px)",
+      //     },
+      //   },
+      // },
+      // animation: {
+      //   // bounce: "bounce 1s ease-in-out infinite",
+      // },
     },
   },
   plugins: [],
