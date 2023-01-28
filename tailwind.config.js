@@ -74,17 +74,26 @@ module.exports = {
         s25: "200px",
       },
       keyframes: {
-        roll: {
+        bounce: {
           "0%": {
-            transform: " translate(-50%, -50%) rotate(0deg)",
+            transform: " translateY(0px)",
+          },
+          "25%": {
+            transform: " translateY(-5px)",
+          },
+          "50%": {
+            transform: " translateY(0px)",
+          },
+          "75%": {
+            transform: " translateY(5px)",
           },
           "100%": {
-            transform: "translate(-50%, -50%) rotate(360deg)",
+            transform: " translateY(0px)",
           },
         },
       },
       animation: {
-        roll: "roll 1s linear infinite",
+        bounce: "bounce 1s ease-in-out infinite",
       },
     },
   },

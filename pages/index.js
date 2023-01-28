@@ -5,10 +5,12 @@ import blob2 from "../public/img/blobs/blob2.png";
 import blob3 from "../public/img/blobs/blob3.png";
 import blob4 from "../public/img/blobs/blob4.png";
 import Typed from "react-typed";
+import Arrow from "../public/img/icons/arrows.png";
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <main className="relative">
         <Image
@@ -37,7 +39,6 @@ const Home = () => {
         />
 
         <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-4/5 w-full">
-          {/* <span className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white block w-full h-[1px]"></span> */}
           <h1 className="text-white text-center border-y uppercase big-text px-s3">
             <Typed
               strings={[`Olanrewaju Ajao`]}
@@ -50,9 +51,14 @@ const Home = () => {
           </h1>
         </div>
       </main>
-
-      <footer></footer>
-    </div>
+      <footer>
+        <div className="fixed bottom-5 flex justify-center w-full animate-bounce">
+          <Link href="/projects">
+            <Image src={Arrow} alt="" width={100} height={100} />
+          </Link>
+        </div>
+      </footer>
+    </>
   );
 };
 

@@ -12,11 +12,12 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Ajao Afeez Olanrewaju</title>
+        <title>Product Designer - Ajao Afeez Olanrewaju</title>
         <meta
           name="description"
           content="Product Designer . UI UX. II Cryptocurrency II Blockchain II Fintech II Webflow"
         />
+        <link rel="icon" href="/img/favicon/favicon.ico" />
       </Head>
       <Component {...pageProps} />;
     </>
