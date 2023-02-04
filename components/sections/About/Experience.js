@@ -31,14 +31,14 @@ const Experience = () => {
       title: "PRESENT",
       history: [
         {
-          company: "Spaceet ( Team Lead )",
-          position: "Product designer ( Internship)",
+          company: "Spaceet Africa",
+          position: "Product designer ( Team Lead )",
           location: "Lagos",
           duration: "Nigeria March 2022 - Nov 2022",
         },
         {
           company: "WEDANCE",
-          position: "Product designer (Contract)",
+          position: "Product designer ( Contract )",
           location: "Munich",
           duration: "GERMANY May 2017 - Present",
         },
